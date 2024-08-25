@@ -190,7 +190,7 @@ const Home = () => {
 							<option key={user.id} value={user.name}>{user.name}</option>
 						))}
 					</select>
-					<button onClick={() => deleteUser(selectedUser)}>Delete User</button>
+					<button onClick={() => deleteUser(selectedUser)} className="deleteUserButton">Delete User</button>
 				</div>
 				<input 
 					type="text"
@@ -198,12 +198,12 @@ const Home = () => {
 					value={userName}
 					placeholder="Enter your username"
 				/>
-				<button onClick={createUser}>Create User</button>
+				<button onClick={createUser} className="createUserButton">Create User</button>
 			</div>
 			{userExists && (
 				<>
 					<div className="input-container">
-						<button onClick={createTask}>Add Todo</button>
+						<button onClick={createTask} className="createUserButton">Add Todo</button>
 						<input 
 							type="text"
 							onChange={(e) => setInputValue(e.target.value)}
@@ -214,7 +214,7 @@ const Home = () => {
 					</div>
 					<ul>
 						{todos.map((todo, index) => (
-							<li key={todo.id}>
+							<li key={todo.id} className="list-item">
 								<input 
 									type="checkbox"
 									checked={todo.is_done}

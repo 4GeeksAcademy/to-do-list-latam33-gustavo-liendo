@@ -44,6 +44,8 @@ ul li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border-radius: 10px;
+    font-weight: 700;
 }
 
 #userSelects-container {
@@ -57,10 +59,19 @@ ul li {
     gap: 10px;
     margin-bottom: 15px;
     margin-top: 30px;
+    background-color: #fbfbfb;
+    color: black;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 11px;
 }
 
 .input-container > input {
     width: 100%;
+}
+
+label {
+    font-size: 12px;
 }
 
 input {
@@ -76,7 +87,44 @@ button {
     cursor: pointer;
 }
 
+.createUserButton {
+    background: #d4d4d4;
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 10px;
+    font-weight: 600;
+}
 
+.createUserButton:hover {
+    background: #94df94;
+    border: 2px solid #008000;
+}
+
+.deleteUserButton {
+    background: #d4d4d4;
+    border: 2px solid #858585;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.deleteUserButton:hover {
+    background: #ffaeae;
+    border: 2px solid #800000;
+}
+
+select {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.list-item {
+
+}
+
+.fa-trash:hover{
+    cursor: pointer;
+    color: #770101;
+    font-size: 20px;
+}
 /* background */
 
 @keyframes move {
